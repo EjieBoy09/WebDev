@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintakasi</title>
+    <link rel="icon" href="Images/Pintakasi LogoZoomIn.jpg">
+    <link rel="stylesheet" href="Styles.css">
+   
+</head>
+<body class="background">
+
+    <header class="upper">
+        <a href="homepage.html" class="logo">
+            <img src="Images/Pintakasi_Logo-removebg-preview2.png" alt="Logo" title="Go To Home Page" style="height: 8vw; padding: 8px; border-radius: 75px;">
+        </a>
+        <p class="site-title">PINTAKASI</p>
+        <nav class="navbar">
+            <ul>
+               <a href="homepage.html" title="Click To Go In Home Page" class="upperbutton">Home</a>
+               <a title="Click To Go In About Page" class="upperbutton" href="about.html">About</a>
+               <a title="Click To Go In Contact Information Page" class="upperbutton" href="contactus.html">Contacts</a>
+            </ul>
+        </nav>
+        <nav class="navbar-right">
+            <img src="Images/user-profile-icon-free-vector-removebg-preview.png" alt="profile" style="height: 8vw;position: relative;">
+              <a href="" title="Click To Go In Sign Up Form" class="upperbutton">Sign Up</a>
+        </nav>
+    </header>
+    <hr style="border: 2px solid rgb(155, 151, 151);">
+
+<div class="parentContainer">
+    <h1 class="ReceiptTitle">Receipt Form</h1>
+</div>
+
+    <div  id="form-data" class="receiptform">
+      <p>NAME: <span id="Name"></span></p>
+      <p>PHONE NUMBER: <span id="Phone-Number"></span></p>
+      <p>VESTMENT TYPE: <span id="vestmentInput"></span></p>
+      <p>NAME OF SAINT: <span id="Name-of-statue"></span></p> 
+      <p>MODE OF PAYMENT: <span id="payment-display"></span></p>
+    </div>
+
+    <script>
+      const Name = localStorage.getItem('Name');
+      const Phone_Number = localStorage.getItem('Phone-Number');
+      const vestment_Input = localStorage.getItem('vestmentInput');
+      const Name_of_statue = localStorage.getItem('Name-of-statue');
+      const paymentMethod = localStorage.getItem('Payment-Method');
+      const vestmentType = localStorage.getItem('vestmentType');
+
+      document.getElementById('Name').textContent = Name;
+      document.getElementById('Phone-Number').textContent = Phone_Number;
+      document.getElementById('vestmentInput').textContent = vestment_Input;
+      document.getElementById('Name-of-statue').textContent = Name_of_statue ;
+      document.getElementById('payment-display').innerText = paymentMethod;
+
+      if (vestmentType) {
+                const vestmentDisplay = document.getElementById('vestmentDisplay');
+                vestmentDisplay.textContent = vestmentType;
+            }
+    </script>  
+  
+<br>
+<br>    
+<br>
+<br>
+    <footer class="Lower">
+        <div class="container-footer">
+          <div class="footer-content">
+            
+            <div class="footer-section right">
+              <ul>
+                <li>No Down Payment No Slot.</li>
+                <li>No Cancellation of Order.</li>
+                <li>No Return No Exchange.</li>
+                <li>No to Request of Copying Other Design from the Artist or Vestment Maker.</li>
+                <li>No Delivery for Unpaid Balance.</li>
+                <li>No Refund</li>
+              </ul>
+            </div>  
+            
+            <hr style="border: 1px solid black;">
+
+            <div class="footer-section center">
+              <p>Offers Affordable and Quality Vestments, Estandarte, Altar Linen, and Others Nationwide.</p>
+<br>
+              <p class="note"> &copy;2024 Pin Akasi. All rights reserved.</p>
+            </div>
+
+            <hr style="border: 1px solid black;">  
+      
+            <div class="footer-section left">
+              <div class="logo-caption-container">
+                <div class="logo-caption">
+                  <a class="logo" href="https://www.facebook.com/tatakPintaKasi">
+                    <img class="footerIcon" title="Facebook Page" style="height: 5vw;" src="Images/Facebook logo.png">
+                  </a>
+                  <p class="caption">Pintakasi</p>
+                </div>
+
+                <div class="logo-caption">
+                  <a class="logo" href="contactus.html#contact">
+                    <img class="footerIcon" title="Phone Number" style="height: 5vw;" src="Images/ContactLogo.1.png">
+                  </a>
+                  <p class="caption">09BLABLABLA</p>
+                </div>
+
+                <div class="logo-caption">
+                  <a class="logo" href="contactus.html#Address">
+                    <img class="footerIcon" title="Location" style="height: 5vw;" src="Images/Location_Icon-removebg-preview.png">
+                  </a>
+                  <p>Salacot San Miguel Bulan BLABLABLA</p>      
+                </div>
+              </div>                                                
+            </div>
+           
+          </div>
+
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintakasi</title>
+    <link rel="icon" href="Images/Pintakasi LogoZoomIn.jpg">
+    <link rel="stylesheet" href="Styles.css">
+  
+</head>
+<body class="background">
+    <header class="upper">
+        <a href="homepage.html" class="logo">
+            <img src="Images/Pintakasi_Logo-removebg-preview2.png" alt="Logo" title="Go To Home Page" style="height: 8vw; padding: 8px; border-radius: 75px;">
+        </a>
+        <p class="site-title">PINTAKASI</p>
+        <nav class="navbar">
+            <ul>
+              <a href="homepage.html" title="Click To Go In Home Page" class="upperbutton">Home</a>
+              <a title="Click To Go In About Page" class="upperbutton" href="about.html">About</a>
+              <a title="Click To Go In Contact Information Page" class="upperbutton" href="contactus.html">Contacts</a>
+            </ul>
+        </nav>
+        <nav class="navbar-right">
+          <img src="Images/user-profile-icon-free-vector-removebg-preview.png" alt="profile" style="height: 8vw;position: relative;">
+          <a href="" title="Click To Go In Sign Up Form" class="upperbutton">Sign Up</a>
+        </nav>
+    </header>
+
+    <div class="parentContainer">
+      <h1 class="fillupFormTitle">Fill Up This Form</h1>
+    </div>
+
+
+
+<form id="form" method="get" action="receipt.html"> 
+    <div class="fillupForm">
+        <label for="Name">Name:</label>
+        <input type="text" class="input" id="Name" name="Fill_Up_Form" placeholder="e.g.,Simon Igop" required autocomplete="off"><br><br>
+        <label for="Address">Address:</label>
+        <textarea rows="3"  id="Address" name="Fill_Up_Form" placeholder="e.g., 123 Poblacion Street, Barangay San Isidro, Quezon City, Metro Manila" required autocomplete="off"></textarea><br><br>
+        <label for="Phone_Number">Phone Number:</label>
+        <input type="text" id="Phone_Number" class="inputNumber" name="Fill_Up_Form" maxlength="11" pattern="\d{1,11}"  required autocomplete="off"><br><br>
+        <label for="Name_Of_Statue">Name Of Statue:</label>
+        <input type="text" class="input" id="Name_Of_Statue" name="Fill_Up_Form"  placeholder="e.g.,Sto NiÑo" required autocomplete="off"><br><br>
+        <label for="Request">Request:</label>
+        <textarea rows="3" name="Fill_Up_Form" id="Request" placeholder="Make It Simple" required autocomplete="off"></textarea>
+      
+        <p>Payment Method</p>
+        <label for="G_Cash">G Cash</label>
+        <input type="radio" id="G_Cash" name="Payment_Method_Option" required><br>
+        
+        <label for="Paymaya">Paymaya</label>
+        <input type="radio" id="Paymaya" name="Payment_Method_Option" required><br>
+        
+        <label for="GrabPay">GrabPay</label>
+        <input type="radio" id="GrabPay" name="Payment_Method_Option" required><br>
+        
+        <label for="PayPal">PayPal</label>
+        <input type="radio" id="PayPal" name="Payment_Method_Option" required><br>
+
+    <input title="Click To Submit" type="submit" value="Submit" id="submit" class="submitbuttonFillup" style=" float: right;">
+    <input title="Click To Reset inputs" type="reset" value="Reset" class="resetbuttonFillup" style=" float: left;">
+
+
+    </div>
+    
+</form>
+
+   
+<script>
+  const form = document.getElementById('form');
+  const Name = document.getElementById('Name');
+  const Phone_Number = document.getElementById('Phone_Number');
+  /*VESTMENT TYPE*/
+  const Name_Of_Statue = document.getElementById('Name_Of_Statue');
+  const PaymentMethodInputs = document.getElementsByName('Payment_Method_Option');
+
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const NameValue = Name.value;
+    const Phone_Number_Value = Phone_Number.value;
+    const Name_Of_Statue_Value = Name_Of_Statue.value;
+
+    let selectedPaymentMethod = '';
+    PaymentMethodInputs.forEach(input => {
+      if (input.checked) {
+        selectedPaymentMethod = input.labels[0].innerText;
+      }
+    });
+
+    localStorage.setItem('Name',NameValue);
+    localStorage.setItem('Phone-Number',Phone_Number_Value);
+    localStorage.setItem('Name-of-statue',Name_Of_Statue_Value);
+   localStorage.setItem('Payment-Method', selectedPaymentMethod);
+
+    window.location.href = "receipt.html";
+
+  })
+  </script>
+
+
+<footer class="Lower">
+  <div class="container-footer">
+    <div class="footer-content">
+      
+      <div class="footer-section right">
+        <ul>
+          <li>No Down Payment No Slot.</li>
+          <li>No Cancellation of Order.</li>
+          <li>No Return No Exchange.</li>
+          <li>No to Request of Copying Other Design from the Artist or Vestment Maker.</li>
+          <li>No Delivery for Unpaid Balance.</li>
+          <li>No Refund</li>
+        </ul>
+      </div>  
+      
+      <hr style="border: 1px solid black;">
+
+      <div class="footer-section center">
+        <p>Offers Affordable and Quality Vestments, Estandarte, Altar Linen, and Others Nationwide.</p>
+        <br>
+        <p class="note"> &copy;2024 Pin Akasi. All rights reserved.</p>
+      </div>
+
+      <hr style="border: 1px solid black;">  
+
+      <div class="footer-section left">
+        <div class="logo-caption-container">
+          <div class="logo-caption">
+            <a class="logo" href="https://www.facebook.com/tatakPintaKasi">
+              <img class="footerIcon" title="Facebook Page" style="height: 5vw;" src="Images/Facebook logo.png">
+            </a>
+            <p class="caption">Pintakasi</p>
+          </div>
+
+          <div class="logo-caption">
+            <a class="logo" href="contactus.html#contact">
+              <img class="footerIcon" title="Phone Number" style="height: 5vw;" src="Images/ContactLogo.1.png">
+            </a>
+            <p class="caption">09BLABLABLA</p>
+          </div>
+
+          <div class="logo-caption">
+            <a class="logo" href="contactus.html#Address">
+              <img class="footerIcon" title="Location" style="height: 5vw;" src="Images/Location_Icon-removebg-preview.png">
+            </a>
+            <p>Salacot San Miguel Bulan BLABLABLA</p>      
+          </div>
+        </div>                                                
+      </div>
+
+    </div>
+   
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1223 @@
+*{
+    text-decoration: none;
+    color: black;
+}
+.upperbutton{
+    background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+    height: 1.5vw;
+    width: 6.5vw;
+    padding: 5px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    display: inline;
+}
+
+.upperbutton:hover{
+  background:linear-gradient(50deg,rgb(121, 121, 120), rgb(121, 121, 121));
+  font-weight: bolder;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.button{
+    background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+    height: 2vw;
+    width: 10vw;
+    padding: 5px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.button:hover{
+    height: 3vw;
+    width: 8vw;
+    font-weight: bolder;
+    transform: scale(1.1);
+}
+.headerIcon{
+  height: 8vw;
+  padding: 8px; 
+  border-radius: 75px;
+}
+.SelectHeight{
+    background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+    height: 2.5vw;
+    width: 8vw;
+    padding: 5px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.SelectHeight:hover{
+  transform: scale(1.1);
+}
+.upper{
+    background-color: rgba(255, 252, 252, 0.753); /*Back ground Color ng Header*/
+    border-radius: 10px;
+    height: 10vw;
+}
+header.upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header .logo {
+    flex: 0 1 auto; /* Logo stays on the left */
+}
+
+header .site-title {
+   font-size: large;
+   color: black;
+}
+
+header .navbar {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 20px;
+}
+
+header .navbar ul li {
+    display: inline;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+header .navbar-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.vestmentText{
+  color: rgb(255, 255, 238); 
+  font-size: larger;
+}
+
+/*Css para sa mga selected per category!*/
+.Selected{
+  background:linear-gradient(50deg,rgb(121, 121, 120), rgb(121, 121, 121));
+  height: 1.5vw;
+  width: 6.5vw;
+  padding: 5px;
+  border-radius: 15px;
+  font-weight: bold;
+  display: inline;
+  position: relative;
+}
+
+.Selected::after{
+  content: "";
+  position: absolute;
+  background:linear-gradient(50deg,rgb(121, 121, 120), rgb(121, 121, 121));
+  height: 3px;
+  width: 100%; /* Always visible */
+  left: 0;
+  bottom: -10px;
+}
+
+
+
+/*Footer's CSS*/
+.footerIcon{
+  cursor: pointer;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color:  rgba(255, 252, 252, 0.747); /* Back Ground Color ng Footer */
+  border-radius: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  height: 17vw;
+}
+
+.footer-section.left {
+  text-align: left;
+}
+
+.footer-section.right {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #050505;
+}
+
+.center p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+footer .logo {
+  flex: 0 1 auto; /* Logo stays on the left */
+}
+
+footer .site-title {
+ font-size: large;
+ color: black;
+}
+.logo-caption-container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.logo-caption {
+  display: flex;
+  align-items: center; /* Align logo and caption vertically */
+  gap: 5px; /* Add space between the logo and caption */
+}
+
+.footerIcon {
+  height: 5vw;
+  width: auto; /* Keep image proportional */
+}
+
+.caption {
+  font-size: 1.3em; /* Adjust font size */
+  margin: 0; /* Remove default paragraph margin */
+}
+
+
+/*---------------------------------New Code With Line Undwer!-------------------------------------------
+.navbar .upperbutton {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.navbar .upperbutton::after{
+  content: "";
+  position: absolute;
+  background-color: #525252; /* line color
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.navbar .upperbutton:hover:after,
+.navbar .upperbutton:focus:after{
+  width: 100%;
+  opacity: 1;
+}
+*/
+
+
+/*About Info's CSS*/
+.aboutInfo{
+    background-color: rgba(226, 215, 215, 0.856);
+    font-size: larger;
+    font-weight: lighter;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5px;
+}
+.parentContainer{ 
+    display: grid;
+    place-items: center;
+}
+.abuoutTitle{
+    display: inline-block;
+    color: rgb(250, 250, 250);
+    /*background-color: rgba(138, 137, 125, 0.877);*/
+    border-radius: 15px;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.Reminder{
+    background-color: rgba(226, 215, 215, 0.856);
+    font-size: larger;
+    font-weight: lighter;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    background-position: center;    
+    background-size: cover;
+    width: 40%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 1px;
+}
+
+
+/*Contact us CSS*/
+.contactus{
+    background-color: rgba(226, 215, 215, 0.856);
+    width: 40%;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1px;
+    text-align: center;
+    font-size: larger;
+    font-weight: lighter;
+    text-decoration: none;
+}
+.AdditionalContactInformation{
+    background-color: rgba(226, 215, 215, 0.856);
+    width: 40%;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1px;
+    text-align: center;
+    font-size: larger;
+    font-weight: lighter;
+    text-decoration: none;
+}
+.contactusTitle{
+    display: inline-block;
+    color: rgb(250, 250, 250);
+    border-radius: 15px;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.heightTitle{
+    display: inline-block;
+    color: rgb(250, 250, 250);
+    border-radius: 15px;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.ButtonheightOption{
+    background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+    height: 5vw;
+    width: 10vw;
+    padding: 5px;
+    border-radius: 15px;
+    font-weight:500px;
+    font-size: large;
+    transition: all 0.5s ease;
+    margin: 10%;
+}
+.ButtonheightOption:hover{
+    font-weight: bolder;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background: linear-gradient(50deg,rgb(206, 203, 40), rgb(167, 165, 52));
+}
+.ButtonheightOption a{
+    text-decoration: none;
+}
+.heightOptions{
+    background-color:rgba(226, 215, 215, 0.856);
+    width: 40%;
+    height: 30%;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1px;
+    text-align: center;
+    font-size: larger;
+    font-weight: lighter;
+    text-decoration: none;
+}
+.heightTitle{
+  color: white;
+  text-align: center;
+}
+
+
+
+/*Height Selection CSS*/
+.fillupFormTitle{
+  display: inline-block;
+  color: rgb(250, 250, 250);
+  border-radius: 15px;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.PatternGuide input{
+    width: 9%;
+    height: 20px;
+    border: 1px solid #030303;
+}
+.PatternGuide{
+    background-color: rgba(226, 215, 215, 0.856);
+    width: 40%;
+    height: 40%;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1px;
+    font-size: x-large;
+    font-weight: lighter;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.submitbutton{
+  background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;  
+  transition: all 0.5s ease;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  float: right; 
+  height: 5rem;
+  width: 5rem; 
+  margin-right: 2vw;
+} 
+.resetbutton{
+  background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;  
+  transition: all 0.5s ease;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  float: left; 
+  height: 3vw; 
+  width: 5vw; 
+  margin-left: 2vw;
+}
+.resetbutton:hover{
+  transform: scale(1.1);
+}
+.submitbutton:hover{  
+  transform: scale(1.1);
+}
+
+.submitbuttonFillup,.resetbuttonFillup{
+  background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;  
+    transition: all 0.5s ease;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*Fillup Forms CSS*/
+  .fillupForm{
+    background-color: rgba(226, 215, 215, 0.856);
+    width: 40%;
+    border-radius: 15px;
+    margin: 0 auto;   
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: lighter;
+    text-decoration: none;
+    height: 50vw;
+    align-content: center; /* align the div verticaly */
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  .fillupForm textarea{
+    resize: none;
+    border-color: #000000;
+    border-radius: 2px;
+    outline: none;
+    width: 50%;
+  }
+  .Name_Of_Statue{
+    resize: vertical;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  .input{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #363535;
+    width: 6.5vw;
+  }
+  .inputNumber{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #363535;
+    width: 6.5vw;
+  }
+  .fillupForm ::placeholder{
+    color: rgb(12, 12, 12);
+  }
+
+  /*Selected Height Css*/
+  
+  .HeightOptionsIner{
+    background-color: rgba(255, 252, 252, 0.753);
+    padding: 10px;
+    position: absolute;
+    border-radius: 10px;
+  }
+
+  .height-side-option .height-A-opt {
+    background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+    display: block; /* Ensures the background covers the entire area */
+    height: 2vw; /* Adjust the height as needed */
+    line-height: 2vw; /* Aligns the text vertically */
+    text-align: center; /* Centers the text horizontally */
+    margin-bottom: 10px; /* Adds spacing between the options */
+    border-radius: 70px; /* Optional: Rounds the edges of the background */
+    padding: 0 10px; /* Adds horizontal padding for better spacing */
+    text-decoration: none; /* Removes the underline for links */
+  }
+  .height-side-option .height-A-opt {
+    position: relative;
+    color: black;
+    text-decoration: none;
+  }
+  .height-side-option .height-A-opt:hover{
+    transform: scale(1.1);
+  }
+  .height-side-option .height-A-opt::after{
+    content: "";
+    position: absolute;
+    background-color: #525252; /* asdasdkjasjdajsoifgopasdf[saasdasdasdasdawdasdal\*/
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+  .height-side-option .height-A-opt:hover:after,
+  .height-side-option .height-A-opt:focus:after{
+    width: 100%;
+    opacity: 1;
+  }
+
+  
+  .selected-height-A-opt{
+    background:linear-gradient(50deg,rgb(121, 121, 120), rgb(121, 121, 121));
+    display: block; /* Ensures the background covers the entire area */
+    height: 2vw; /* Adjust the height as needed */
+    line-height: 2vw; /* Aligns the text vertically */
+    text-align: center; /* Centers the text horizontally */
+    margin-bottom: 10px; /* Adds spacing between the options */
+    border-radius: 70px; /* Optional: Rounds the edges of the background */
+    padding: 0 10px; /* Adds horizontal padding for better spacing */
+    text-decoration: none; /* Removes the underline for links */
+    position: relative;
+    font-weight: bold;
+  }
+  .selected-height-A-opt::after{
+    content: "";
+    position: absolute;
+    background:linear-gradient(50deg,rgb(121, 121, 120), rgb(121, 121, 121));
+    height: 3px;
+    width: 100%; /* Always visible */
+    left: 0;
+    bottom: -10px;
+  }
+ 
+ 
+
+  .background{
+    background-image: url(Images/Grey.jpg); /*Background Image of the website (centerd)*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: black;
+    background-attachment: fixed;
+  }
+  .background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(73, 71, 71, 0.644), rgba(71, 65, 65, 0.774)), 
+    url(Images/Full1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1; /* Place the image behind the content */
+  }
+
+  /*Note In the Bottom*/
+  .note{
+    text-align: center;
+    padding: 0;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .receiptform{
+    background-color: rgba(226, 215, 215, 0.856);
+    width: 40%;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1px;
+    text-align: center;
+    font-size: larger;
+    font-weight: lighter;
+    text-decoration: none;
+  }
+  .ReceiptTitle{
+    display: inline-block;
+    color: rgb(250, 250, 250);
+    border-radius: 15px;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  
+  /*Code for images*/
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for categories */
+    gap: 3vw; /* Space between categories */
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  .vestment-section {
+    text-align: center;
+  }
+  .vestment-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: rgb(249, 255, 228);
+  }
+  .vestment-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns of images */
+    gap: 1vw; /* Space between images */
+    justify-items: center;
+  }
+  .vestment-images img {
+    width: 100%;
+    height: 100%;
+    max-width: 200px; /* Optional: Limit maximum image width */
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+  }
+
+  .vestment-images img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+
+   @media (width>=1024px){
+    header.upper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+  }
+    header .navbar ul {
+      gap: 50px;
+    }
+    .upperbutton{
+      height: 3vw;
+      width: 8.5vw;
+      border-radius: 10px;
+    }
+    .Selected{
+      height: 3vw;
+      width: 8.5vw;
+      border-radius: 10px;
+    }
+    .upperbutton,.Selected{
+      font-size: x-large;
+    }
+    .headerIcon{
+      height: 10vw;
+      padding: 0px;
+      margin-left: 0px; 
+    }
+    header .site-title{
+      font-size: 3vw;
+    }
+    .Lower{
+      font-size: x-large;  
+    }
+    .logo-caption-container{
+      gap: 15px;
+    }
+    .caption {
+      font-size: 1.3em; /* Adjust font size */
+    }
+    .footer-section.right{
+      font-size: 1.3em;
+      text-align: left;
+      padding: 5px;
+    }
+    .container-footer {
+      padding: 2px;
+    }
+    .footer-section {
+      flex: 1;
+      padding: 0px;
+      text-align: center;
+      height: 27vw; /*Height nung white sa footer*/
+    }
+    .center p {
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    .logo-caption-container{
+      gap: 5px;
+    }
+    .vestment-title {
+      font-size: 3em;
+    }
+    .vestmentText{
+      font-size: 2vw;
+    }
+    .SelectHeight{
+      height: 4vw;
+      width: 11vw;
+      font-size: 1.5vw;
+      
+    }
+    #vestmentInput {
+      height: 3vw; 
+      width: 14vw;
+      font-size: 1.5vw;
+    }
+    .PatternGuide{
+      width: 65%;
+      height: 33%;
+      font-size: 4vw;   
+      margin-left: 33vw;
+    }
+    .contactus{ 
+      width: 65%;
+      padding: 10px;
+      font-size: 3vw
+  }
+  .AdditionalContactInformation{
+    width: 60%;
+    padding: 10px;
+    font-size: 3vw
+  }
+  .contactusTitle{
+    font-size: 4vw;
+  }
+  .aboutInfo{
+    font-size: 3vw;
+    width: 75%;
+  }
+  .Reminder{
+    font-size: 3vw;
+    width: 80%;
+  }
+  .abuoutTitle{
+    font-size: 4vw;
+  }
+  .ButtonheightOption{
+    margin: 8%;
+    height: 8vw;
+    width: 13vw;
+    font-size: 3vw;
+  }
+  .heightTitle{
+    text-align: center;
+  }
+  .height-side-option .height-A-opt {
+    border-radius: 20px;
+    height: 4vw; /* Adjust the height as needed */
+    line-height: 4vw; /* Aligns the text vertically */
+    font-size: 1.5vw;
+  }
+  .HeightOptionsIner p{
+    font-size: 1.5vw;
+  }
+  .heightTitle{
+    font-size: 3vw;
+  }
+  .selected-height-A-opt{
+    height: 4vw; /* Adjust the height as needed */
+    width: 9vw;
+    border-radius: 20px;
+    line-height: 4vw; /* Aligns the text vertically */
+    font-size: 1.5vw;
+  }
+  .PatternGuide{
+    width: 50%;
+    height: 30%;
+    font-size: xx-large;   
+  }
+  .PatternGuide input{
+    height: 2vw;
+    width: 4vw;
+    font-size: 1.5vw;
+  }
+  .PatternGuide label{
+    margin-left: 0;
+  }
+  .submitbutton,.resetbutton{
+    background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;  
+    transition: all 0.5s ease;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;  
+    height: 30vw;
+  }
+  .fillupForm{
+    font-size: 2vw;
+    line-height: 50px;
+    width: 50%;
+    height: 60%;
+  }
+  .submitbuttonFillup,.resetbuttonFillup{
+      width: 8vw; 
+      height: 4vw;
+  }
+ .fillupFormTitle{
+  font-size: 4vw;
+ }
+  .fillupForm input, textarea{
+    font-size: 1.5vw;
+  }
+  .inputNumber{
+    width: 11vw;
+    font-size: 1.5vw;
+  }
+  .input{
+    width: 15vw;
+    font-size: 1.5vw;
+  }
+  .receiptform{
+    width: 60%;
+    border-radius: 15px;
+    font-size: 3vw;
+  }
+  .ReceiptTitle{
+    font-size: 4vw;
+  }
+
+  
+   }
+
+
+
+
+  /*For Tablets*/
+  @media (width<=768px){
+    header.upper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+  }
+    header .navbar ul {
+      gap: 30px;
+    }
+    .upperbutton{
+      height: 3vw;
+      width: 8.5vw;
+      border-radius: 10px;
+    }
+    .Selected{
+      height: 3vw;
+      width: 7vw;
+      border-radius: 10px;
+    }
+    .upperbutton,.Selected{
+      font-size: medium;
+    }
+    .Lower{
+      font-size: medium;
+    }
+    .logo-caption-container{
+      gap: 15px;
+    }
+
+    .caption {
+      font-size: 1.1em; /* Adjust font size */
+    }
+    .footer-section.right {
+      font-size: 1em;
+    }
+    
+    .footer-section {
+      flex: 1;
+      padding: 1px;
+      text-align: center;
+      height: 25vw;
+    }
+    .logo-caption-container{
+      gap: 10px;
+    }
+    .vestmentText{
+      font-size: medium;
+    }
+    .SelectHeight{
+      height: 3.5vw;
+      width: 12vw;
+    }
+    .aboutInfo {
+    font-size: medium;
+    }
+    .Reminder{
+      font-size: medium;
+    }
+    .ButtonheightOption{
+      margin: 8%;
+      height: 8vw;
+      width: 13vw;
+    }
+    .height-side-option .height-A-opt {
+      height: 4vw; /* Adjust the height as needed */
+      line-height: 4vw; /* A
+      ligns the text vertically */
+    }
+    .selected-height-A-opt{
+      height: 4vw; /* Adjust the height as needed */
+      line-height: 4vw; /* Aligns the text vertically */
+    }
+    .PatternGuide{
+      width: 50%;
+      height: 30%;
+      font-size: x-large;   
+    }
+    .PatternGuide label{
+      margin-left: 5%;
+    }
+    .submitbutton,.resetbutton{
+      background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+      padding: 5px;
+      border-radius: 10px;
+      font-weight: bold;  
+      transition: all 0.5s ease;
+      margin-bottom: 10px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .fillupForm{
+      width: 60%;
+      height: 73vw;
+      line-height: 30px;
+      margin-bottom: 50px;
+    }
+    .submitbuttonFillup,.resetbuttonFillup{
+        width: 8vw; 
+        height: 4vw;
+    }
+    .inputNumber{
+      width: 11vw;
+    }
+    .input{
+      width: 15vw;
+    }
+  }
+  
+  /*For Cellphone*/
+
+  @media (width<=425px){
+    /*Header*/
+    header.upper {
+      padding: 30px 0px;
+    }
+    header .navbar ul {
+      gap: 5px;
+    }
+    .upperbutton,.Selected{
+      font-size: 3vw;
+      height: 3vw;
+      width: 12vw;
+      border-radius: 8px;
+    }
+    header .site-title {
+      font-size: 4vw;
+      font-weight: bold;
+   }
+   .headerIcon{
+    height: 8vw;
+    padding: 5px;
+    margin-left: 5px; 
+  }
+  .vestmentText{
+    font-size: 3.5vw;
+  }
+
+    /*Footer*/
+   .Lower{
+    font-size: small;  
+  }
+  .logo-caption-container{
+    gap: 5px;
+  }
+  .caption {
+    font-size: 1em; /* Adjust font size */
+  }
+  .footer-section.right{
+    font-size: 0.8em;
+    text-align: left;
+    padding: 1px;
+  }
+  .container-footer {
+    padding: 2px;
+  }
+  .footer-section {
+    flex: 1;
+    padding: 0px;
+    text-align: center;
+    height: 40vw; /*Height nung white sa footer*/
+  }
+  .center p {
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+
+  .logo-caption-container{
+    gap: 5px;
+  }
+
+  .SelectHeight{
+    height: 7vw;
+    width: 22vw;
+    font-size: 3vw;
+  }
+  .aboutInfo {
+  font-size: medium;
+  }
+  .Reminder{
+    font-size: medium;
+    width: 65%;
+  }
+  .contactusTitle{
+    font-size: 5.5vw;
+  }
+  .contactus{ 
+    width: 70%;
+    padding: 5px;
+}
+.AdditionalContactInformation{
+  width: 70%;
+  padding: 5px;
+}
+  .ButtonheightOption{
+    margin: 5%;
+    height: 15vw;
+    width: 25vw;
+  }
+  .heightOptions{
+    width: 76%;
+    height: 60%;
+    padding: 3px;
+}
+.HeightOptionsIner{
+  width: 25vw;
+  font-size: 3.5vw;
+  font-weight: bold;
+}
+  .height-side-option .height-A-opt {
+    height: 7vw; /* Adjust the height as needed */
+    width: 18vw;
+    line-height: 7vw; /* Aligns the text vertically */
+    border-radius: 7px;
+    right: 50%;
+  }
+  .selected-height-A-opt{
+    height: 7vw; /* Adjust the height as needed */
+    width: 18vw;
+    line-height: 7vw; /* Aligns the text vertically */
+    border-radius: 7px;
+    right: 50%;
+  }
+  .PatternGuide{
+    width: 65%;
+    height: 33%;
+    font-size: large;   
+    margin-left: 32vw;
+  }
+  .PatternGuide label{
+    margin-left: 5%;
+  }
+  .PatternGuide input{
+    width: 11%;
+    height: 20px;
+    border: 1px solid #030303;
+}
+.heightTitle{
+  font-size: 6.5vw;
+}
+  .submitbutton,.resetbutton{
+    background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;  
+    transition: all 0.5s ease;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .fillupForm{
+    width: 75%;
+    height: 130vw;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  .submitbuttonFillup,.resetbuttonFillup{
+      width: 8vw; 
+      height: 4vw;
+  }
+  .inputNumber{
+    width: 17vw;
+  }
+  .input{
+    width: 20vw;
+  }
+  .receiptform{
+    width: 70%;
+    border-radius: 15px;
+  }
+  .vestment-images img {
+    width: 30vw;  
+    height: 40vw; 
+  }
+  
+  .category-grid {
+    display: grid;
+  }
+  .vestment-section {
+    text-align: center;
+  }
+  .vestment-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: rgb(249, 255, 228);
+  }
+  .vestment-images {
+    display: flex;
+    flex-direction: column; 
+    gap: 3vw; /* Space between images */
+    justify-content: flex-start;
+  }
+}
+
+
+/*Small Cellphone*/
+@media (width<=375px){
+      header .site-title {
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+    header .navbar ul {
+      gap: 3px;
+    }
+    .upperbutton,.Selected{
+      font-size: 3vw;
+      height: 5vw;
+      width: 13vw;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .headerIcon{
+      height: 13vw;
+      padding: 0px;
+      margin-left: 0px; 
+    }
+    .vestmentText{
+      font-size: 3.1vw;
+      font-weight: 900;
+    }
+    .abuoutTitle{
+      font-size: 6.5vw;
+    }
+    .contactusTitle{
+      font-size: 5vw;
+    }
+    .SelectHeight{
+      height: 10vw;
+      width: 22vw;
+      font-size: 3vw;
+      font-weight: bold;
+    }
+    .heightTitle{
+      font-size: 7vw;
+      font-weight: 900;
+    }
+    .PatternGuide{
+      width: 65%;
+      height: 33%;
+      font-size: 4vw;   
+      margin-left: 33vw;
+    }
+    .contactus{ 
+      width: 65%;
+      padding: 5px;
+      font-size: 5vw
+  }
+  .AdditionalContactInformation{
+    width: 65%;
+    padding: 5px;
+    font-size: 5vw
+  }
+  .footer-section {
+    flex: 1;
+    padding: 0px;
+    text-align: center;
+    height: 43vw; /*Height nung white sa footer*/
+  }
+  .submitbutton,.resetbutton{
+    background: linear-gradient(50deg,rgb(252, 249, 84), rgb(199, 196, 19));
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;  
+    transition: all 0.5s ease;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .fillupForm{
+    width: 75%;
+    height: 110vw;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .submitbuttonFillup,.resetbuttonFillup{
+      width: 15vw; 
+      height: 8vw;
+  }
+  .inputNumber{
+    width: 20vw;
+  }
+  .input{
+    width: 35vw; /*Input text ng name/name of statue sa fill-up form*/ 
+  }
+}
